@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #333333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.carrito-menu {
+    position: relative;
+    cursor: pointer;
+}
+
+.carrito-menu i {
+    font-size: 24px;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.agregar-producto {
+    margin-bottom: 20px;
+}
+
+.agregar-producto .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.agregar-producto input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: calc(25% - 20px);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #5cb85c;
+    color: white;
+}
+
+.productos {
+    margin-top: 20px;
+}
+
+.lista-productos, .lista-carrito-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.producto, .item-carrito-menu {
+    background: #e9ecef;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    flex: 1 0 200px;
+    text-align: center;
+}
+
+.producto img, .item-carrito-menu img {
+    width: 200px;
+    height: 125px;
+    object-fit: cover;
+}
+
+.item-carrito-menu p {
+    margin: 5px 0;
+}
+
+/* ... (resto de tu CSS) ... */
+
+/* Estilos para el icono del carrito */
+.carrito-icono {
+    position: relative;
+    cursor: pointer;
+    font-size: 24px;
+    display: inline-block;
+}
+
+.carrito-cantidad {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la ventana flotante del carrito */
+.carrito-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito-contenido {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    max-height: 60%;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.cerrar-carrito {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar-carrito:hover,
+.cerrar-carrito:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para las cards de productos y carrito */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.producto, .item-carrito {
+    background: #e9ecef;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    flex: 1 0 30%;
+    box-sizing: border-box;
+}
+
+.producto img, .item-carrito img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.producto p, .item-carrito p {
+    margin: 5px 0;
+}
+
+.btnAgregarCarrito, .btnEliminar {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #5cb85c;
+    color: white;
+}
+
+.btnEliminar {
+    background: #d9534f;
+}

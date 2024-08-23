@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Padel</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Tienda Padel</h1>
+            <div class="menu">
+                <div id="carritoIcono" class="carrito-icono">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="carritoCantidad" class="carrito-cantidad">0</span>
+                </div>
+                <input type="text" id="buscadorProducto" placeholder="Buscar producto...">
+            </div>
+        </header>
+        <div class="agregar-producto">
+            <h2>Productos</h2>
+            <div class="inputs">
+                <input type="text" id="nombreProducto" placeholder="Nombre del Producto">
+                <input type="text" id="precioProducto" placeholder="Precio del Producto">
+                <input type="text" id="stockProducto" placeholder="Stock del Producto">
+                <input type="text" id="imagenProducto" placeholder="URL de la Imagen del Producto">
+                <button id="btnAgregarPersonalizado">Agregar Producto</button>
+            </div>
+        </div>
+        <div class="productos" id="listaProductos"></div>
+    </div>
+
+    <div id="carritoModal" class="carrito-modal">
+        <div class="carrito-contenido">
+            <span id="cerrarCarrito" class="cerrar-carrito">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="listaCarrito" class="lista-carrito"></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
